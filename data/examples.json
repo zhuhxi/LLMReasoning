@@ -1,0 +1,20 @@
+[
+  {
+    "id": "example-1",
+    "question": "Elsa has 3 apples and buys 4 more. Then she gives 2 apples to Anna. How many apples does Elsa have now?",
+    "answer": "5",
+    "category": "arithmetic"
+  },
+  {
+    "id": "example-2",
+    "question": "A train travels 40 miles in the first hour and 35 miles in the second hour. How far did it travel in total?",
+    "answer": "75",
+    "category": "arithmetic"
+  },
+  {
+    "id": "example-3",
+    "question": "There are 5 red balls and 7 blue balls in a box. If you add 3 more blue balls, how many blue balls are there?",
+    "answer": "10",
+    "category": "counting"
+  }
+]

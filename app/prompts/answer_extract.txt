@@ -1,0 +1,5 @@
+Extract the final answer from the reasoning trace.
+Return only the answer, with no explanation.
+
+Trace:
+{trace}

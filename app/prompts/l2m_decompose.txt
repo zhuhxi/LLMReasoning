@@ -1,0 +1,6 @@
+You are decomposing a reasoning problem into a short sequence of subproblems.
+Return 2 to 5 ordered items, one per line, prefixed with "1.", "2.", and so on.
+Do not solve the problem yet.
+
+Question:
+{question}

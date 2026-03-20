@@ -1,0 +1,6 @@
+Choose the better reasoning style for the question.
+- Reply "cot" for direct chain-of-thought.
+- Reply "l2m" for least-to-most decomposition.
+
+Question:
+{question}

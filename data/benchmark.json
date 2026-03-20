@@ -1,0 +1,22 @@
+[
+  {"id": "b1", "question": "Liam has 4 books and buys 3 more. How many books does he have now?", "answer": "7", "category": "arithmetic"},
+  {"id": "b2", "question": "A baker made 12 muffins and sold 5. How many muffins are left?", "answer": "7", "category": "arithmetic"},
+  {"id": "b3", "question": "Nina reads 8 pages on Monday and 9 pages on Tuesday. How many pages did she read in total?", "answer": "17", "category": "arithmetic"},
+  {"id": "b4", "question": "A bus has 18 passengers. At the first stop, 6 get off and 4 get on. How many passengers are on the bus now?", "answer": "16", "category": "arithmetic"},
+  {"id": "b5", "question": "Tom has 3 bags with 4 marbles in each bag. How many marbles does he have altogether?", "answer": "12", "category": "multiplication"},
+  {"id": "b6", "question": "A teacher puts 20 pencils equally into 4 boxes. How many pencils are in each box?", "answer": "5", "category": "division"},
+  {"id": "b7", "question": "Maya has 15 candies. She gives 4 to her friend and then buys 6 more. How many candies does Maya have now?", "answer": "17", "category": "arithmetic"},
+  {"id": "b8", "question": "There are 9 birds on a tree. 2 fly away and then 5 more land. How many birds are on the tree now?", "answer": "12", "category": "arithmetic"},
+  {"id": "b9", "question": "If a toy costs 7 dollars and Ben buys 3 toys, how much does he spend?", "answer": "21", "category": "multiplication"},
+  {"id": "b10", "question": "A rope is 30 meters long. It is cut into 3 equal pieces. How long is each piece?", "answer": "10", "category": "division"},
+  {"id": "b11", "question": "Sara has twice as many stickers as Leo. Leo has 6 stickers. How many stickers does Sara have?", "answer": "12", "category": "logic"},
+  {"id": "b12", "question": "A farm has 5 chickens and 3 cows. How many legs are there in total?", "answer": "22", "category": "logic"},
+  {"id": "b13", "question": "John is older than Mia. Mia is older than Ava. Who is the oldest?", "answer": "John", "category": "ordering"},
+  {"id": "b14", "question": "There are 24 cookies. They are shared equally among 6 children. How many cookies does each child get?", "answer": "4", "category": "division"},
+  {"id": "b15", "question": "A shop sold 11 pens in the morning and 8 pens in the afternoon. Then 3 pen orders were canceled. How many pens were sold in the end?", "answer": "16", "category": "arithmetic"},
+  {"id": "b16", "question": "Emma has 10 coins. She finds 5 more and loses 3. How many coins does she have now?", "answer": "12", "category": "arithmetic"},
+  {"id": "b17", "question": "Two boxes each contain 9 oranges. If 4 oranges are eaten from one box, how many oranges remain in total?", "answer": "14", "category": "arithmetic"},
+  {"id": "b18", "question": "A class has 14 girls and 13 boys. How many students are in the class?", "answer": "27", "category": "arithmetic"},
+  {"id": "b19", "question": "If 36 pages are read over 4 days equally, how many pages are read each day?", "answer": "9", "category": "division"},
+  {"id": "b20", "question": "Olivia has 2 red ribbons and 5 blue ribbons. She buys 3 more red ribbons. How many red ribbons does she have now?", "answer": "5", "category": "counting"}
+]
