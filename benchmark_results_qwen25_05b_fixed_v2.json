@@ -1,0 +1,761 @@
+{
+  "benchmark_path": "data/benchmark.json",
+  "runs": {
+    "cot_single": {
+      "strategy": "cot",
+      "samples": 1,
+      "accuracy": 0.9,
+      "correct": 18,
+      "total": 20,
+      "cases": [
+        {
+          "id": "b1",
+          "question": "Liam has 4 books and buys 3 more. How many books does he have now?",
+          "expected": "7",
+          "predicted": "Liam now has 7 books",
+          "is_correct": true,
+          "normalized_expected": "7",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b2",
+          "question": "A baker made 12 muffins and sold 5. How many muffins are left?",
+          "expected": "7",
+          "predicted": "7",
+          "is_correct": true,
+          "normalized_expected": "7",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b3",
+          "question": "Nina reads 8 pages on Monday and 9 pages on Tuesday. How many pages did she read in total?",
+          "expected": "17",
+          "predicted": "So, Nina read a total of 17 pages in two days",
+          "is_correct": true,
+          "normalized_expected": "17",
+          "normalized_predicted": "17"
+        },
+        {
+          "id": "b4",
+          "question": "A bus has 18 passengers. At the first stop, 6 get off and 4 get on. How many passengers are on the bus now?",
+          "expected": "16",
+          "predicted": "So, there are now 17 passengers on the bus",
+          "is_correct": false,
+          "normalized_expected": "16",
+          "normalized_predicted": "17"
+        },
+        {
+          "id": "b5",
+          "question": "Tom has 3 bags with 4 marbles in each bag. How many marbles does he have altogether?",
+          "expected": "12",
+          "predicted": "Tom has a total of 12 marbles",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b6",
+          "question": "A teacher puts 20 pencils equally into 4 boxes. How many pencils are in each box?",
+          "expected": "5",
+          "predicted": "Therefore, there are 5 pencils in each box",
+          "is_correct": true,
+          "normalized_expected": "5",
+          "normalized_predicted": "5"
+        },
+        {
+          "id": "b7",
+          "question": "Maya has 15 candies. She gives 4 to her friend and then buys 6 more. How many candies does Maya have now?",
+          "expected": "17",
+          "predicted": "Therefore, the final answer is: Maya now has 17 candies",
+          "is_correct": true,
+          "normalized_expected": "17",
+          "normalized_predicted": "17"
+        },
+        {
+          "id": "b8",
+          "question": "There are 9 birds on a tree. 2 fly away and then 5 more land. How many birds are on the tree now?",
+          "expected": "12",
+          "predicted": "There are 12 birds on the tree",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b9",
+          "question": "If a toy costs 7 dollars and Ben buys 3 toys, how much does he spend?",
+          "expected": "21",
+          "predicted": "7 3 = 21 dollars",
+          "is_correct": true,
+          "normalized_expected": "21",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b10",
+          "question": "A rope is 30 meters long. It is cut into 3 equal pieces. How long is each piece?",
+          "expected": "10",
+          "predicted": "Therefore, each piece is 10 meters long",
+          "is_correct": true,
+          "normalized_expected": "10",
+          "normalized_predicted": "10"
+        },
+        {
+          "id": "b11",
+          "question": "Sara has twice as many stickers as Leo. Leo has 6 stickers. How many stickers does Sara have?",
+          "expected": "12",
+          "predicted": "Leo has 6 stickers, and Sara has twice as many stickers as Leo. Therefore, Sara has \\(2 \\times 6 = 12\\) stickers",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "leo has 6 stickers and sara has twice as many stickers as leo. therefore sara has \\ 2 \\times 6 = 12\\ stickers"
+        },
+        {
+          "id": "b12",
+          "question": "A farm has 5 chickens and 3 cows. How many legs are there in total?",
+          "expected": "22",
+          "predicted": "Therefore, there are a total of 22 legs on the farm",
+          "is_correct": true,
+          "normalized_expected": "22",
+          "normalized_predicted": "22"
+        },
+        {
+          "id": "b13",
+          "question": "John is older than Mia. Mia is older than Ava. Who is the oldest?",
+          "expected": "John",
+          "predicted": "Therefore, the oldest person among John, Mia, and Ava is John",
+          "is_correct": true,
+          "normalized_expected": "john",
+          "normalized_predicted": "the oldest person among john mia and ava is john"
+        },
+        {
+          "id": "b14",
+          "question": "There are 24 cookies. They are shared equally among 6 children. How many cookies does each child get?",
+          "expected": "4",
+          "predicted": "Each child gets 4 cookies",
+          "is_correct": true,
+          "normalized_expected": "4",
+          "normalized_predicted": "4"
+        },
+        {
+          "id": "b15",
+          "question": "A shop sold 11 pens in the morning and 8 pens in the afternoon. Then 3 pen orders were canceled. How many pens were sold in the end?",
+          "expected": "16",
+          "predicted": "Total = 11 + 8 - 3 = 16 pens were sold in the end",
+          "is_correct": true,
+          "normalized_expected": "16",
+          "normalized_predicted": "total = 11 + 8 - 3 = 16 pens were sold in the end"
+        },
+        {
+          "id": "b16",
+          "question": "Emma has 10 coins. She finds 5 more and loses 3. How many coins does she have now?",
+          "expected": "12",
+          "predicted": "Emma now has 12 coins",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b17",
+          "question": "Two boxes each contain 9 oranges. If 4 oranges are eaten from one box, how many oranges remain in total?",
+          "expected": "14",
+          "predicted": "<answer>18</answer>",
+          "is_correct": false,
+          "normalized_expected": "14",
+          "normalized_predicted": "18"
+        },
+        {
+          "id": "b18",
+          "question": "A class has 14 girls and 13 boys. How many students are in the class?",
+          "expected": "27",
+          "predicted": "14 + 13 = 27 students",
+          "is_correct": true,
+          "normalized_expected": "27",
+          "normalized_predicted": "14"
+        },
+        {
+          "id": "b19",
+          "question": "If 36 pages are read over 4 days equally, how many pages are read each day?",
+          "expected": "9",
+          "predicted": "Therefore, if 36 pages are read over 4 days equally, each day is read 9 pages",
+          "is_correct": true,
+          "normalized_expected": "9",
+          "normalized_predicted": "if 36 pages are read over 4 days equally each day is read 9 pages"
+        },
+        {
+          "id": "b20",
+          "question": "Olivia has 2 red ribbons and 5 blue ribbons. She buys 3 more red ribbons. How many red ribbons does she have now?",
+          "expected": "5",
+          "predicted": "Olivia now has 5 red ribbons",
+          "is_correct": true,
+          "normalized_expected": "5",
+          "normalized_predicted": "5"
+        }
+      ]
+    },
+    "cot_self_consistency": {
+      "strategy": "cot",
+      "samples": 2,
+      "accuracy": 1.0,
+      "correct": 20,
+      "total": 20,
+      "cases": [
+        {
+          "id": "b1",
+          "question": "Liam has 4 books and buys 3 more. How many books does he have now?",
+          "expected": "7",
+          "predicted": "Liam has 7 books",
+          "is_correct": true,
+          "normalized_expected": "7",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b2",
+          "question": "A baker made 12 muffins and sold 5. How many muffins are left?",
+          "expected": "7",
+          "predicted": "There are 7 muffins left",
+          "is_correct": true,
+          "normalized_expected": "7",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b3",
+          "question": "Nina reads 8 pages on Monday and 9 pages on Tuesday. How many pages did she read in total?",
+          "expected": "17",
+          "predicted": "17 pages",
+          "is_correct": true,
+          "normalized_expected": "17",
+          "normalized_predicted": "17"
+        },
+        {
+          "id": "b4",
+          "question": "A bus has 18 passengers. At the first stop, 6 get off and 4 get on. How many passengers are on the bus now?",
+          "expected": "16",
+          "predicted": "Therefore, the answer is: <answer>16</answer>",
+          "is_correct": true,
+          "normalized_expected": "16",
+          "normalized_predicted": "16"
+        },
+        {
+          "id": "b5",
+          "question": "Tom has 3 bags with 4 marbles in each bag. How many marbles does he have altogether?",
+          "expected": "12",
+          "predicted": "12 marbles",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b6",
+          "question": "A teacher puts 20 pencils equally into 4 boxes. How many pencils are in each box?",
+          "expected": "5",
+          "predicted": "Each box contains 5 pencils",
+          "is_correct": true,
+          "normalized_expected": "5",
+          "normalized_predicted": "5"
+        },
+        {
+          "id": "b7",
+          "question": "Maya has 15 candies. She gives 4 to her friend and then buys 6 more. How many candies does Maya have now?",
+          "expected": "17",
+          "predicted": "Therefore, Maya now has 17 candies",
+          "is_correct": true,
+          "normalized_expected": "17",
+          "normalized_predicted": "17"
+        },
+        {
+          "id": "b8",
+          "question": "There are 9 birds on a tree. 2 fly away and then 5 more land. How many birds are on the tree now?",
+          "expected": "12",
+          "predicted": "So, the final answer is that there are 12 birds on the tree now",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b9",
+          "question": "If a toy costs 7 dollars and Ben buys 3 toys, how much does he spend?",
+          "expected": "21",
+          "predicted": "Ben spends $21 on 3 toys",
+          "is_correct": true,
+          "normalized_expected": "21",
+          "normalized_predicted": "ben spends 21 on 3 toys"
+        },
+        {
+          "id": "b10",
+          "question": "A rope is 30 meters long. It is cut into 3 equal pieces. How long is each piece?",
+          "expected": "10",
+          "predicted": "Each piece is 10 meters long",
+          "is_correct": true,
+          "normalized_expected": "10",
+          "normalized_predicted": "10"
+        },
+        {
+          "id": "b11",
+          "question": "Sara has twice as many stickers as Leo. Leo has 6 stickers. How many stickers does Sara have?",
+          "expected": "12",
+          "predicted": "12",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b12",
+          "question": "A farm has 5 chickens and 3 cows. How many legs are there in total?",
+          "expected": "22",
+          "predicted": "Therefore, there are a total of 22 legs on the farm",
+          "is_correct": true,
+          "normalized_expected": "22",
+          "normalized_predicted": "22"
+        },
+        {
+          "id": "b13",
+          "question": "John is older than Mia. Mia is older than Ava. Who is the oldest?",
+          "expected": "John",
+          "predicted": "Therefore, John is the oldest among John, Mia, and Ava",
+          "is_correct": true,
+          "normalized_expected": "john",
+          "normalized_predicted": "john is the oldest among john mia and ava"
+        },
+        {
+          "id": "b14",
+          "question": "There are 24 cookies. They are shared equally among 6 children. How many cookies does each child get?",
+          "expected": "4",
+          "predicted": "Each child gets 4 cookies",
+          "is_correct": true,
+          "normalized_expected": "4",
+          "normalized_predicted": "4"
+        },
+        {
+          "id": "b15",
+          "question": "A shop sold 11 pens in the morning and 8 pens in the afternoon. Then 3 pen orders were canceled. How many pens were sold in the end?",
+          "expected": "16",
+          "predicted": "16 pens were sold in total",
+          "is_correct": true,
+          "normalized_expected": "16",
+          "normalized_predicted": "16"
+        },
+        {
+          "id": "b16",
+          "question": "Emma has 10 coins. She finds 5 more and loses 3. How many coins does she have now?",
+          "expected": "12",
+          "predicted": "Emma has 12 coins",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b17",
+          "question": "Two boxes each contain 9 oranges. If 4 oranges are eaten from one box, how many oranges remain in total?",
+          "expected": "14",
+          "predicted": "14 oranges remain in total",
+          "is_correct": true,
+          "normalized_expected": "14",
+          "normalized_predicted": "14"
+        },
+        {
+          "id": "b18",
+          "question": "A class has 14 girls and 13 boys. How many students are in the class?",
+          "expected": "27",
+          "predicted": "14 + 13 = 27 students",
+          "is_correct": true,
+          "normalized_expected": "27",
+          "normalized_predicted": "14"
+        },
+        {
+          "id": "b19",
+          "question": "If 36 pages are read over 4 days equally, how many pages are read each day?",
+          "expected": "9",
+          "predicted": "So, 9 pages are read each day",
+          "is_correct": true,
+          "normalized_expected": "9",
+          "normalized_predicted": "9"
+        },
+        {
+          "id": "b20",
+          "question": "Olivia has 2 red ribbons and 5 blue ribbons. She buys 3 more red ribbons. How many red ribbons does she have now?",
+          "expected": "5",
+          "predicted": "Therefore, Olivia now has 5 red ribbons",
+          "is_correct": true,
+          "normalized_expected": "5",
+          "normalized_predicted": "5"
+        }
+      ]
+    },
+    "l2m_single": {
+      "strategy": "l2m",
+      "samples": 1,
+      "accuracy": 0.75,
+      "correct": 15,
+      "total": 20,
+      "cases": [
+        {
+          "id": "b1",
+          "question": "Liam has 4 books and buys 3 more. How many books does he have now?",
+          "expected": "7",
+          "predicted": "7",
+          "is_correct": true,
+          "normalized_expected": "7",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b2",
+          "question": "A baker made 12 muffins and sold 5. How many muffins are left?",
+          "expected": "7",
+          "predicted": "7",
+          "is_correct": true,
+          "normalized_expected": "7",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b3",
+          "question": "Nina reads 8 pages on Monday and 9 pages on Tuesday. How many pages did she read in total?",
+          "expected": "17",
+          "predicted": "17 pages",
+          "is_correct": true,
+          "normalized_expected": "17",
+          "normalized_predicted": "17"
+        },
+        {
+          "id": "b4",
+          "question": "A bus has 18 passengers. At the first stop, 6 get off and 4 get on. How many passengers are on the bus now?",
+          "expected": "16",
+          "predicted": "16 passengers",
+          "is_correct": true,
+          "normalized_expected": "16",
+          "normalized_predicted": "16"
+        },
+        {
+          "id": "b5",
+          "question": "Tom has 3 bags with 4 marbles in each bag. How many marbles does he have altogether?",
+          "expected": "12",
+          "predicted": "36",
+          "is_correct": false,
+          "normalized_expected": "12",
+          "normalized_predicted": "36"
+        },
+        {
+          "id": "b6",
+          "question": "A teacher puts 20 pencils equally into 4 boxes. How many pencils are in each box?",
+          "expected": "5",
+          "predicted": "Each box contains 5 pencils",
+          "is_correct": true,
+          "normalized_expected": "5",
+          "normalized_predicted": "5"
+        },
+        {
+          "id": "b7",
+          "question": "Maya has 15 candies. She gives 4 to her friend and then buys 6 more. How many candies does Maya have now?",
+          "expected": "17",
+          "predicted": "17",
+          "is_correct": true,
+          "normalized_expected": "17",
+          "normalized_predicted": "17"
+        },
+        {
+          "id": "b8",
+          "question": "There are 9 birds on a tree. 2 fly away and then 5 more land. How many birds are on the tree now?",
+          "expected": "12",
+          "predicted": "7",
+          "is_correct": false,
+          "normalized_expected": "12",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b9",
+          "question": "If a toy costs 7 dollars and Ben buys 3 toys, how much does he spend?",
+          "expected": "21",
+          "predicted": "Ben spends $21 on 3 toys",
+          "is_correct": true,
+          "normalized_expected": "21",
+          "normalized_predicted": "ben spends 21 on 3 toys"
+        },
+        {
+          "id": "b10",
+          "question": "A rope is 30 meters long. It is cut into 3 equal pieces. How long is each piece?",
+          "expected": "10",
+          "predicted": "Each piece is 10 meters long",
+          "is_correct": true,
+          "normalized_expected": "10",
+          "normalized_predicted": "10"
+        },
+        {
+          "id": "b11",
+          "question": "Sara has twice as many stickers as Leo. Leo has 6 stickers. How many stickers does Sara have?",
+          "expected": "12",
+          "predicted": "12",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b12",
+          "question": "A farm has 5 chickens and 3 cows. How many legs are there in total?",
+          "expected": "22",
+          "predicted": "18 legs",
+          "is_correct": false,
+          "normalized_expected": "22",
+          "normalized_predicted": "18"
+        },
+        {
+          "id": "b13",
+          "question": "John is older than Mia. Mia is older than Ava. Who is the oldest?",
+          "expected": "John",
+          "predicted": "John",
+          "is_correct": true,
+          "normalized_expected": "john",
+          "normalized_predicted": "john"
+        },
+        {
+          "id": "b14",
+          "question": "There are 24 cookies. They are shared equally among 6 children. How many cookies does each child get?",
+          "expected": "4",
+          "predicted": "Each child gets approximately 67%",
+          "is_correct": false,
+          "normalized_expected": "4",
+          "normalized_predicted": "67"
+        },
+        {
+          "id": "b15",
+          "question": "A shop sold 11 pens in the morning and 8 pens in the afternoon. Then 3 pen orders were canceled. How many pens were sold in the end?",
+          "expected": "16",
+          "predicted": "16 pens were sold in the end",
+          "is_correct": true,
+          "normalized_expected": "16",
+          "normalized_predicted": "16"
+        },
+        {
+          "id": "b16",
+          "question": "Emma has 10 coins. She finds 5 more and loses 3. How many coins does she have now?",
+          "expected": "12",
+          "predicted": "Emma has 12 coins now",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b17",
+          "question": "Two boxes each contain 9 oranges. If 4 oranges are eaten from one box, how many oranges remain in total?",
+          "expected": "14",
+          "predicted": "10 oranges remain in total",
+          "is_correct": false,
+          "normalized_expected": "14",
+          "normalized_predicted": "10"
+        },
+        {
+          "id": "b18",
+          "question": "A class has 14 girls and 13 boys. How many students are in the class?",
+          "expected": "27",
+          "predicted": "27",
+          "is_correct": true,
+          "normalized_expected": "27",
+          "normalized_predicted": "27"
+        },
+        {
+          "id": "b19",
+          "question": "If 36 pages are read over 4 days equally, how many pages are read each day?",
+          "expected": "9",
+          "predicted": "9 pages are read each day",
+          "is_correct": true,
+          "normalized_expected": "9",
+          "normalized_predicted": "9"
+        },
+        {
+          "id": "b20",
+          "question": "Olivia has 2 red ribbons and 5 blue ribbons. She buys 3 more red ribbons. How many red ribbons does she have now?",
+          "expected": "5",
+          "predicted": "Olivia has 5 red ribbons now",
+          "is_correct": true,
+          "normalized_expected": "5",
+          "normalized_predicted": "5"
+        }
+      ]
+    },
+    "l2m_self_consistency": {
+      "strategy": "l2m",
+      "samples": 2,
+      "accuracy": 0.85,
+      "correct": 17,
+      "total": 20,
+      "cases": [
+        {
+          "id": "b1",
+          "question": "Liam has 4 books and buys 3 more. How many books does he have now?",
+          "expected": "7",
+          "predicted": "Liam now has 7 books",
+          "is_correct": true,
+          "normalized_expected": "7",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b2",
+          "question": "A baker made 12 muffins and sold 5. How many muffins are left?",
+          "expected": "7",
+          "predicted": "7",
+          "is_correct": true,
+          "normalized_expected": "7",
+          "normalized_predicted": "7"
+        },
+        {
+          "id": "b3",
+          "question": "Nina reads 8 pages on Monday and 9 pages on Tuesday. How many pages did she read in total?",
+          "expected": "17",
+          "predicted": "17.00 pages",
+          "is_correct": true,
+          "normalized_expected": "17",
+          "normalized_predicted": "17"
+        },
+        {
+          "id": "b4",
+          "question": "A bus has 18 passengers. At the first stop, 6 get off and 4 get on. How many passengers are on the bus now?",
+          "expected": "16",
+          "predicted": "16",
+          "is_correct": true,
+          "normalized_expected": "16",
+          "normalized_predicted": "16"
+        },
+        {
+          "id": "b5",
+          "question": "Tom has 3 bags with 4 marbles in each bag. How many marbles does he have altogether?",
+          "expected": "12",
+          "predicted": "24 marbles",
+          "is_correct": false,
+          "normalized_expected": "12",
+          "normalized_predicted": "24"
+        },
+        {
+          "id": "b6",
+          "question": "A teacher puts 20 pencils equally into 4 boxes. How many pencils are in each box?",
+          "expected": "5",
+          "predicted": "Each box contains 5 pencils",
+          "is_correct": true,
+          "normalized_expected": "5",
+          "normalized_predicted": "5"
+        },
+        {
+          "id": "b7",
+          "question": "Maya has 15 candies. She gives 4 to her friend and then buys 6 more. How many candies does Maya have now?",
+          "expected": "17",
+          "predicted": "17",
+          "is_correct": true,
+          "normalized_expected": "17",
+          "normalized_predicted": "17"
+        },
+        {
+          "id": "b8",
+          "question": "There are 9 birds on a tree. 2 fly away and then 5 more land. How many birds are on the tree now?",
+          "expected": "12",
+          "predicted": "12",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b9",
+          "question": "If a toy costs 7 dollars and Ben buys 3 toys, how much does he spend?",
+          "expected": "21",
+          "predicted": "21 dollars",
+          "is_correct": true,
+          "normalized_expected": "21",
+          "normalized_predicted": "21"
+        },
+        {
+          "id": "b10",
+          "question": "A rope is 30 meters long. It is cut into 3 equal pieces. How long is each piece?",
+          "expected": "10",
+          "predicted": "Each piece is 10 meters long",
+          "is_correct": true,
+          "normalized_expected": "10",
+          "normalized_predicted": "10"
+        },
+        {
+          "id": "b11",
+          "question": "Sara has twice as many stickers as Leo. Leo has 6 stickers. How many stickers does Sara have?",
+          "expected": "12",
+          "predicted": "12",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b12",
+          "question": "A farm has 5 chickens and 3 cows. How many legs are there in total?",
+          "expected": "22",
+          "predicted": "22 legs",
+          "is_correct": true,
+          "normalized_expected": "22",
+          "normalized_predicted": "22"
+        },
+        {
+          "id": "b13",
+          "question": "John is older than Mia. Mia is older than Ava. Who is the oldest?",
+          "expected": "John",
+          "predicted": "John",
+          "is_correct": true,
+          "normalized_expected": "john",
+          "normalized_predicted": "john"
+        },
+        {
+          "id": "b14",
+          "question": "There are 24 cookies. They are shared equally among 6 children. How many cookies does each child get?",
+          "expected": "4",
+          "predicted": "Each child gets 4 cookies",
+          "is_correct": true,
+          "normalized_expected": "4",
+          "normalized_predicted": "4"
+        },
+        {
+          "id": "b15",
+          "question": "A shop sold 11 pens in the morning and 8 pens in the afternoon. Then 3 pen orders were canceled. How many pens were sold in the end?",
+          "expected": "16",
+          "predicted": "16 pens were sold in the end",
+          "is_correct": true,
+          "normalized_expected": "16",
+          "normalized_predicted": "16"
+        },
+        {
+          "id": "b16",
+          "question": "Emma has 10 coins. She finds 5 more and loses 3. How many coins does she have now?",
+          "expected": "12",
+          "predicted": "Emma has 12 coins now",
+          "is_correct": true,
+          "normalized_expected": "12",
+          "normalized_predicted": "12"
+        },
+        {
+          "id": "b17",
+          "question": "Two boxes each contain 9 oranges. If 4 oranges are eaten from one box, how many oranges remain in total?",
+          "expected": "14",
+          "predicted": "14",
+          "is_correct": true,
+          "normalized_expected": "14",
+          "normalized_predicted": "14"
+        },
+        {
+          "id": "b18",
+          "question": "A class has 14 girls and 13 boys. How many students are in the class?",
+          "expected": "27",
+          "predicted": "52",
+          "is_correct": false,
+          "normalized_expected": "27",
+          "normalized_predicted": "52"
+        },
+        {
+          "id": "b19",
+          "question": "If 36 pages are read over 4 days equally, how many pages are read each day?",
+          "expected": "9",
+          "predicted": "36 pages are read each day",
+          "is_correct": false,
+          "normalized_expected": "9",
+          "normalized_predicted": "36"
+        },
+        {
+          "id": "b20",
+          "question": "Olivia has 2 red ribbons and 5 blue ribbons. She buys 3 more red ribbons. How many red ribbons does she have now?",
+          "expected": "5",
+          "predicted": "Olivia has 5 red ribbons now",
+          "is_correct": true,
+          "normalized_expected": "5",
+          "normalized_predicted": "5"
+        }
+      ]
+    }
+  }
+}

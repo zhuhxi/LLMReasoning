@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from app.models import BenchmarkExample
-from app.utils.parsing import normalize_answer
+from app.utils.parsing import answers_match, normalize_answer
 
 
 def load_benchmark(path: str) -> list[BenchmarkExample]:
@@ -30,17 +30,19 @@ def evaluate_benchmark(agent: Any, benchmark_path: str, output_path: str) -> dic
         cases = []
         for example in examples:
             outcome = agent.solve(example.question, strategy=strategy, samples=samples)
-            predicted = normalize_answer(outcome["final_selected_answer"])
-            expected = normalize_answer(example.answer)
-            is_correct = predicted == expected
+            predicted = outcome["final_selected_answer"]
+            expected = example.answer
+            is_correct = answers_match(expected, predicted)
             correct += int(is_correct)
             cases.append(
                 {
                     "id": example.id,
                     "question": example.question,
-                    "expected": example.answer,
-                    "predicted": outcome["final_selected_answer"],
+                    "expected": expected,
+                    "predicted": predicted,
                     "is_correct": is_correct,
+                    "normalized_expected": normalize_answer(expected),
+                    "normalized_predicted": normalize_answer(predicted),
                 }
             )
         results["runs"][label] = {
